@@ -6,7 +6,6 @@ html {
   padding: 0; }
 
 body {
-<<<<<<< HEAD
   margin: 0; }
 
 h1, h2, h3, h4, h5 {
@@ -19,9 +18,15 @@ li {
 .row {
   margin: 0; }
 
+.section1 {
+  background-color: #f747f1;
+  height: 500px; }
+  .section1 nav .nav {
+    display: flex; }
+    .section1 nav .nav .menu-item {
+      float: left;
+      padding: 15px 25px;
+      margin: 0px 2px;
+      border: 3px solid black; }
+
 /*# sourceMappingURL=main.css.map */
-=======
-  margin: 0;
-  padding: 0;
-}
->>>>>>> refs/remotes/origin/master
