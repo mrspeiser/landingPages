@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 @import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900);
 html {
   margin: 0;
   padding: 0; }
@@ -11,6 +12,9 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0; }
 
+ul {
+  padding: 0; }
+
 li {
   list-style: none;
   text-decoration: none; }
@@ -19,14 +23,75 @@ li {
   margin: 0; }
 
 .section1 {
-  background-color: #f747f1;
+  background-image: url("http://www.eddiesenatore.com/wp-content/uploads/2016/10/global-business.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px; }
+  .section1 .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 103, 133, 0.7); }
   .section1 nav .nav {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 80px 0px; }
     .section1 nav .nav .menu-item {
       float: left;
       padding: 15px 25px;
       margin: 0px 2px;
-      border: 3px solid black; }
+      border-bottom: 3px solid #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: all 500ms ease; }
+      .section1 nav .nav .menu-item:hover {
+        color: #000000;
+        border-bottom: 3px solid #000000; }
+  .section1 .content {
+    text-align: center; }
+    .section1 .content .title {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: 69px;
+      color: white;
+      text-transform: uppercase; }
+    .section1 .content .sub-title {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 25px;
+      color: white;
+      text-transform: uppercase; }
+    .section1 .content .ul-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0px 0px 0px; }
+      .section1 .content .ul-buttons .buttons {
+        float: left;
+        padding: 15px 25px;
+        margin: 0px 2px;
+        border: 5px solid #fff;
+        cursor: pointer;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: all 500ms ease; }
+        .section1 .content .ul-buttons .buttons:hover {
+          color: black;
+          border: 5px solid #000000; }
+        .section1 .content .ul-buttons .buttons .title {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: white;
+          text-transform: uppercase; }
+          .section1 .content .ul-buttons .buttons .title:hover {
+            color: #000000; }
 
 /*# sourceMappingURL=main.css.map */

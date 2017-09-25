@@ -6,6 +6,7 @@
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
 @include google-font("Raleway:800");
+@include google-font("Roboto:400,500,900");
 
 
 html {
@@ -21,6 +22,11 @@ h1, h2, h3, h4, h5 {
 	margin: 0;
 }
 
+ul {
+	
+	padding: 0;
+}
+
 li {
 	list-style: none;
 	text-decoration: none;
@@ -32,8 +38,19 @@ li {
 
 
 .section1 {
-  background-color: #f747f1;
+  // background-color: #abcdef;
+   
+  background-image: url('http://www.eddiesenatore.com/wp-content/uploads/2016/10/global-business.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px; 
+
+  .overlay {
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(22, 103, 133, 0.7);
+  }
 
 	nav {
 		.resp-menu-toggle {
@@ -42,12 +59,24 @@ li {
 
 	    .nav {
 			display: flex;
+			justify-content: center;
+			margin: 0px 0px 80px 0px;
 
 	    	.menu-item {
 			float: left;
 			padding: 15px 25px;
 			margin: 0px 2px;
-			border: 3px solid black;
+			border-bottom: 3px solid $white;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			color: white;
+			cursor: pointer;
+			@include transition-all;
+			&:hover {
+				color: $black;
+				border-bottom: 3px solid $black;
+			}
 
 			}
 
@@ -55,29 +84,55 @@ li {
 	}
 
 	.content {
+		text-align: center;
 
 		.title {
+			color: white;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 69px;
+			color: white;
+			text-transform: uppercase;
+
 
 		}
 
 		.sub-title {
-
+			color: white;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 25px;
+			color: white;
+			text-transform: uppercase;
 		}
 
-		.buttons {
+		.ul-buttons {
+			display: flex;
+			justify-content: center;
+			margin: 100px 0px 0px 0px;
 
 			.buttons {
-
+			float: left;
+			padding: 15px 25px;
+			margin: 0px 2px;
+			border: 5px solid $white;
+			cursor: pointer;
+			color: white;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 20px;
+			text-transform: uppercase;
+			@include transition-all;
+			&:hover {
+				color: black;
+				border: 5px solid $black;
+				}	
+			
+				}
 			}
-
-
 		}
-
-
 	}
-
 }
-
 
 
 
