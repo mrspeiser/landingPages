@@ -39,12 +39,12 @@ li {
 
 .section1 {
   // background-color: #abcdef;
-   
+
   background-image: url('http://www.eddiesenatore.com/wp-content/uploads/2016/10/global-business.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px; 
+  height: 100vh; 
 
   .overlay {
   	width: 100%;
@@ -85,6 +85,8 @@ li {
 
 	.content {
 		text-align: center;
+
+
 
 		.title {
 			color: white;
@@ -132,12 +134,91 @@ li {
 			}
 		}
 	}
+.section2	{
+	height: 500px;
+	padding-top: 50px;
+
+	.section2-content {
+
+		.title {
+			color: black;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 69px;
+			margin-bottom: 50px;
+			text-transform: uppercase;
+	
+		}
+	}
+}
+
+.img-feat {
+	background-image: url('https://psmarketingimages.s3.amazonaws.com/blog/wp-content/uploads/2015/09/25153417/Journey-Mapping-Tools.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+}
+
+.section2-subtitle {
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+.text-column {
+	margin-top: 50px;
+}
+
+.text {
+	padding: 0px 10px 10px 20px;
+	font-family: sans-serif;
+	line-height: 2;
+
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0px 0px 0px;
+	button{
+		background-color: #fff;
+		color: rgba(22, 103, 133, 1);
+		border: 3px solid rgba(22, 103, 133, 1);
+		text-transform: uppercase;
+		font-family: 'Roboto';
+		font-weight: 500;
+	}
+	
+}
+.learnmore {
+	border:none;
+	padding: 10px 20px;
+	text-align: center;
 }
 
 
+.section3 {
+	height: 400px;
+	margin-top: 100px;
+	// padding: 50px 0px 0px 0px;
+}
 
+.img-feat2-ctn {
+	padding: 0px 0px 0px 30px;
+}
+.img-feat2 {
+	background-image: url('http://www.proteaninbound.com/wp-content/uploads/2016/06/Getty-Social-Media-Affects-Content-Marketing-and-SEO.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	margin-top: 50px;
 
-
+}
 
 
 
