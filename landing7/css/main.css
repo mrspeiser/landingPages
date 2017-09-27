@@ -130,7 +130,12 @@ li {
     border: 3px solid #166785;
     text-transform: uppercase;
     font-family: 'Roboto';
-    font-weight: 500; }
+    font-weight: 500;
+    transition: all 500ms ease; }
+    .btn-container button:hover {
+      color: black;
+      border: 3px solid black;
+      box-shadow: 0px 5px 10px -2px; }
 
 .learnmore {
   border: none;
@@ -139,7 +144,8 @@ li {
 
 .section3 {
   height: 400px;
-  margin-top: 100px; }
+  margin-top: 150px;
+  padding: 50px 0px 0px 0px; }
 
 .img-feat2-ctn {
   padding: 0px 0px 0px 30px; }
@@ -151,5 +157,77 @@ li {
   background-size: cover;
   height: 100%;
   margin-top: 50px; }
+
+.img-feat3 {
+  background-image: url("http://images.huffingtonpost.com/2016-07-27-1469579396-579020-Businessintelligenceforbusiness2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-top: 50px;
+  padding: 0px 50px 0px 0px;
+  opacity: 1; }
+
+.title {
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 69px;
+  margin-bottom: 50px;
+  padding: 50px 0px 0px 0px;
+  text-transform: uppercase; }
+
+.stn-left-wrap {
+  border-right: 8px solid #000000; }
+  .stn-left-wrap .stn-left {
+    transition: all 500ms ease; }
+    .stn-left-wrap .stn-left:hover {
+      background-color: #166785; }
+    .stn-left-wrap .stn-left .stn-left-child-wrap {
+      width: 100%;
+      overflow: hidden;
+      height: 300px; }
+      .stn-left-wrap .stn-left .stn-left-child-wrap .child-elements-left {
+        width: 200%;
+        transition: all 500ms ease; }
+        .stn-left-wrap .stn-left .stn-left-child-wrap .child-elements-left:hover {
+          transform: translateX(-50%); }
+        .stn-left-wrap .stn-left .stn-left-child-wrap .child-elements-left .child-element1 {
+          height: 300px;
+          background-color: green;
+          width: 49.7%;
+          display: inline-block; }
+        .stn-left-wrap .stn-left .stn-left-child-wrap .child-elements-left .child-element2 {
+          height: 300px;
+          width: 49.9%;
+          background-color: purple;
+          display: inline-block; }
+
+.stn-right-wrap {
+  border-left: 8px solid #000000; }
+  .stn-right-wrap .stn-right {
+    transition: all 500ms ease; }
+    .stn-right-wrap .stn-right:hover {
+      background-color: #ff6400; }
+    .stn-right-wrap .stn-right .stn-right-child-wrap {
+      width: 100%;
+      overflow: hidden;
+      height: 300px; }
+      .stn-right-wrap .stn-right .stn-right-child-wrap .child-elements-right {
+        width: 200%;
+        transition: all 500ms ease; }
+        .stn-right-wrap .stn-right .stn-right-child-wrap .child-elements-right:hover {
+          transform: translateX(-50%); }
+        .stn-right-wrap .stn-right .stn-right-child-wrap .child-elements-right .child-element1 {
+          height: 300px;
+          background-color: blue;
+          width: 49.7%;
+          display: inline-block; }
+        .stn-right-wrap .stn-right .stn-right-child-wrap .child-elements-right .child-element2 {
+          height: 300px;
+          width: 49.9%;
+          background-color: pink;
+          display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
