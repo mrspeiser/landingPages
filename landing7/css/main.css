@@ -19,6 +19,30 @@ li {
   list-style: none;
   text-decoration: none; }
 
+footer {
+  margin-top: 50px;
+  background-color: #0d0d0d;
+  padding: 40px 100px; }
+  footer ul {
+    color: #1667c8; }
+    footer ul li {
+      list-style: none;
+      margin-bottom: 15px;
+      font-family: 'Roboto'; }
+      footer ul li a {
+        padding: 20px;
+        color: white;
+        text-decoration: none; }
+      footer ul li h5 {
+        padding-left: 18px;
+        margin-bottom: 15px;
+        font-size: 16px; }
+
+.last {
+  background-color: black;
+  padding: 15px 40px;
+  font-size: 20px; }
+
 .row {
   margin: 0; }
 
@@ -264,6 +288,9 @@ li {
 .section4 {
   width: 100%;
   padding: 20px; }
+  @media only screen and (max-width: 1070px) {
+    .section4 {
+      margin-top: 600px; } }
 
 .sctn-4-img {
   background-image: url("http://cerasis.com/wp-content/uploads/2013/11/social-media-manufacturing.jpg");

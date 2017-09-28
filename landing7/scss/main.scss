@@ -32,14 +32,51 @@ li {
 	text-decoration: none;
 }	
 
+
+footer {
+	margin-top: 50px;
+	background-color: #0d0d0d;
+	// box-shadow: 0px 2px 30px 20px $color2;
+	padding: 40px 100px;
+
+	ul {
+
+		color: rgba(22, 103, 200, 1);
+
+		li {
+			list-style: none;
+			margin-bottom: 15px;
+			font-family: 'Roboto';
+
+						a {
+				padding: 20px;
+				color: white;
+				text-decoration: none;
+			}
+			
+			h5 {
+				padding-left: 18px;
+				margin-bottom: 15px;
+				font-size: 16px;
+			}
+
+
+		}
+	}
+}
+
+.last {
+	background-color: black;
+	padding: 15px 40px;
+	font-size: 20px;
+}
+
+
 .row {
 	margin: 0;
 }
 
-
 .section1 {
-  // background-color: #abcdef;
-
   background-image: url('http://www.eddiesenatore.com/wp-content/uploads/2016/10/global-business.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -149,6 +186,7 @@ li {
 
 	@include small-screen {
 		height: 1120px;
+
 	}
 	.section2-content {
 
@@ -225,6 +263,8 @@ li {
 	height: 800px;
 	margin-top: 150px;
 	padding: 50px 0px 0px 0px;
+
+
 }
 
 .img-feat2-ctn {
@@ -332,7 +372,6 @@ li {
 		
 		@include transition-all;
 		&:hover {
-		// background-color: rgba(255, 100, 0,1);
 
 	}
 
@@ -382,6 +421,9 @@ li {
 	// height: 600px;
 	padding: 20px;
 	// border: 1px solid blue;
+		@include larger-screen {
+		margin-top: 600px;
+	}
 
 
 
