@@ -1,0 +1,104 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");
+@include google-font("Raleway:800");
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+  margin: 0;
+  overflow-x:hidden;
+ } 
+
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}	
+
+aside {
+	height: 100%;
+	width: 25%;
+	background-color: green;
+	position: absolute;
+	@include transition-all;
+	@include small-screen {
+	width: 100%;
+	}
+}
+
+header {
+	padding: 0px 20px;
+	@include headerdefault($default, $headerheight);
+
+
+}
+
+.wrapper {
+	width: 100%;
+	height: 800px;
+	background-color: orange;
+	margin: 0px;
+	padding: 0px;
+	@include transition-all;
+}
+
+.row {
+	margin: 0;
+}
+
+.togg {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+		margin-left: 0;
+		@include transition-all;
+		.fa-chevron-right {
+		cursor: pointer;
+		margin-left: 0;
+		@include transition-all;
+
+
+	}
+}
+
+
+
+/* Transition Classes */
+
+.left25pct {
+	margin-left: 25%;
+	@include transition-all;
+
+}
+
+.left-25pct {
+	margin-left: -25%;
+	@include transition-all;
+	@include small-screen {
+		margin-left: -100%;
+	}
+
+}
+
+.rotate180 {
+	transform: rotate(180deg);
+	@include transition-all;
+}
+
+
+
+
+
