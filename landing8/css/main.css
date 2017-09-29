@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 @import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900);
 html {
   margin: 0;
   padding: 0; }
@@ -56,6 +57,12 @@ header {
     margin-left: 0;
     transition: all 500ms ease; }
 
+.underline-fx {
+  transition: all 500ms ease;
+  border-top: 6px solid black;
+  width: 0px;
+  background-color: black; }
+
 /* Transition Classes */
 .left25pct {
   margin-left: 25%;
@@ -71,5 +78,14 @@ header {
 .rotate180 {
   transform: rotate(180deg);
   transition: all 500ms ease; }
+
+.underline {
+  width: 100px;
+  background-color: black; }
+
+/* Text Classes */
+.title {
+  font-family: "Raleway", Georgia, serif;
+  font-weight: 800; }
 
 /*# sourceMappingURL=main.css.map */

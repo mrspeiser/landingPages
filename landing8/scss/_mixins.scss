@@ -42,6 +42,10 @@
 	border-radius: $radius;
 }
 
+@mixin border($border: 6px solid #000){
+	border: $border;
+}
+
 @mixin headerdefault($default, $headerheight){
 	background-color: $default;
 	color: $white;
@@ -50,6 +54,10 @@
 	@include transition-all;
 }
 
+@mixin headline($headline-font) {
+	font-family: $headline-font;
+	font-weight: 800;
+}
 
 
 

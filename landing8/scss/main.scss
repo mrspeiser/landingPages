@@ -6,6 +6,7 @@
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
 @include google-font("Raleway:800");
+@include google-font("Roboto:400,500,900");
 
 
 html {
@@ -74,6 +75,12 @@ header {
 	}
 }
 
+.underline-fx {
+	@include transition-all;
+	border-top: 6px solid black;
+	width: 0px;
+	background-color: black;
+}
 
 
 /* Transition Classes */
@@ -98,7 +105,20 @@ header {
 	@include transition-all;
 }
 
+.underline {
 
+	width: 100px;
+	background-color: black;
+}
+
+
+
+
+/* Text Classes */
+
+.title {
+	@include headline($headline-font);
+}
 
 
 
