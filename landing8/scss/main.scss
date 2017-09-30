@@ -7,6 +7,7 @@
 @include google-font("Titillium+Web");
 @include google-font("Raleway:800");
 @include google-font("Roboto:400,500,900");
+@include google-font("Roboto:300,100");
 
 
 html {
@@ -31,11 +32,25 @@ li {
 aside {
 	height: 100%;
 	width: 25%;
-	background-color: green;
+	padding: 25px 0px;
+	background-color: #080808;
 	position: absolute;
 	@include transition-all;
 	@include small-screen {
 	width: 100%;
+
+	}
+
+	li {
+		width: 100%;
+		text-align: center;
+		padding: 15px 0px;
+		a {
+			color: white;
+			font-family: 'Roboto';
+			font-weight: 100;
+			font-size: 30px;
+		}
 	}
 }
 
@@ -43,7 +58,22 @@ header {
 	padding: 0px 20px;
 	@include headerdefault($default, $headerheight);
 
+	.nav {
+		float: right;
+		padding-right: 80px;
+		@include transition-all;
+		@include medium-screen() {
+			display: none;
+		}
+		.navli {
+			float: left;
+			padding: 15px 20px;
+			font-family: 'Roboto';
+			font-weight: 100;
+			font-size: 25px;
 
+		}
+	}
 }
 
 
@@ -62,8 +92,7 @@ footer {
 			margin-bottom: 15px;
 			font-family: 'Roboto';
 
-						a {
-				padding: 20px;
+			a {
 				color: white;
 				text-decoration: none;
 			}
@@ -241,7 +270,9 @@ footer {
 	display: flex;
 	align-items: center;
 	margin-left: 0;
-		@include transition-all;
+	opacity: 0;
+	
+	@include transition-all;
 		
 		.fa-chevron-right {
 		cursor: pointer;
@@ -251,6 +282,11 @@ footer {
 		&:hover {
 		  opacity: 1;
 	    }
+	}
+
+	@include medium-screen() {
+		opacity: 1;
+
 	}
 }
 
