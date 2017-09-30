@@ -80,7 +80,8 @@ footer {
     grid-row-end: 6;
     background: #3bbced;
     padding: 15px;
-    text-align: center; }
+    text-align: center;
+    min-height: 375px; }
   #content .c2 {
     grid-column-start: 7;
     grid-column-end: 10;
