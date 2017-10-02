@@ -105,35 +105,56 @@ footer {
     padding: 15px;
     text-align: center;
     min-height: 375px; }
+    @media only screen and (max-width: 750px) {
+      #content .c1 {
+        grid-column-end: 10;
+        grid-row-end: 4; } }
   #content .c2 {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 10;
+    min-height: 275px;
     background: purple; }
-  #content .c3 {
-    grid-column-start: 1;
-    grid-column-end: 3; }
-  #content .c4 {
-    grid-column-start: 3;
-    grid-column-end: 5; }
-  #content .c5 {
-    grid-column-start: 5;
-    grid-column-end: 7; }
+    @media only screen and (max-width: 750px) {
+      #content .c2 {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 4;
+        grid-row-end: 6; } }
   #content .c3, #content .c4, #content .c5 {
     background: black;
     border: 9px solid black;
     border-radius: 0px;
     grid-row-start: 6;
-    grid-row-end: 10;
-    position: relative;
-    overflow: hidden; }
-    #content .c3 button, #content .c4 button, #content .c5 button {
-      position: absolute;
-      bottom: 20px;
-      right: 33%; }
-    #content .c3 h4, #content .c4 h4, #content .c5 h4 {
-      margin-bottom: 10px; }
+    grid-row-end: 10; }
+    @media only screen and (max-width: 750px) {
+      #content .c3, #content .c4, #content .c5 {
+        grid-row-start: 6;
+        grid-row-end: 10; } }
+  #content .c3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 10; }
+    @media only screen and (max-width: 750px) {
+      #content .c3 {
+        grid-column-start: 1;
+        grid-column-end: 1; } }
+  #content .c4 {
+    grid-column-start: 3;
+    grid-column-end: 5; }
+    @media only screen and (max-width: 750px) {
+      #content .c4 {
+        grid-column-start: 2;
+        grid-column-end: 2; } }
+  #content .c5 {
+    grid-column-start: 5;
+    grid-column-end: 7; }
+    @media only screen and (max-width: 750px) {
+      #content .c5 {
+        grid-column-start: 3;
+        grid-column-end: 10; } }
 
 .img-sect-1 {
   width: 100%;
