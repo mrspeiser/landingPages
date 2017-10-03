@@ -1,0 +1,25 @@
+// THEME
+// Allowed Values: Dark, Light, Default;
+
+
+//Allowed Values: blue-beans, roger-rovers, pastry-pizza
+
+// COLORS
+$text-color: #222222;
+$body-background-color: #fff;
+$theme-color: #170a48;
+$secondary-color: #3B5998;
+$gray: #696969;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+
+// FONTS
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: 'Titillium Web', Georgia, serif;
+
+// SIZES
+$content-width: 960px;
+$header-height: 60px;
+$footer-height: 90px;
+$col: col-width($columns: 8);

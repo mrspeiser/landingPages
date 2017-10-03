@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+a {
+  font-style: italic;
+  text-decoration: none; }
+
+* html body {
+  font-size: 125%; }
+
+body {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-size: 1.125em;
+  color: #222222;
+  margin: 0;
+  background-color: #fff; }
+  @media only screen and (max-width: 960px) {
+    body {
+      font-size: 125%; } }
+
+h1, h2, h3, h4 {
+  margin: 0; }
+
+a {
+  font-style: normal; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.login-form {
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 5px 20px 5px;
+  position: absolute;
+  margin-top: 30px;
+  width: 300px;
+  height: 0px;
+  opacity: 0;
+  background-color: white;
+  right: 0;
+  transition: all 300ms ease-in-out;
+  z-index: 2;
+  border: 1px solid #f6f6f6;
+  box-shadow: 1px 2px 10px 0px gray; }
+  .login-form h4 {
+    margin: 20px 0px; }
+  .login-form input {
+    margin: 25px 0px;
+    padding: 20px; }
+  .login-form .button-main {
+    border: none; }
+
+.login-form:after, .login-form:before {
+  bottom: 100%;
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.login-form:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fff;
+  border-width: 15px;
+  margin-left: -22px; }
+
+.login-form:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: rgba(194, 194, 194, 0.4);
+  border-width: 18px;
+  margin-left: -27px; }
+
+.form-show {
+  height: 300px;
+  opacity: 1;
+  transition: all 300ms ease-in-out; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  padding: 20px 0px; }
+
+.logo {
+  max-height: 50px;
+  margin-left: 26px;
+  cursor: pointer;
+  transition: all 300ms ease; }
+  .logo:hover {
+    transform: scale(1.2) rotate(360deg); }
+
+.nav div {
+  float: right; }
+
+.nav-btn {
+  background-color: #3B5998;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 2px 20px 0px 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: all 300ms ease; }
+  .nav-btn:hover {
+    transform: scale(1.1); }
+
+.header-text-grp {
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: 100px; }
+
+.button-grp {
+  margin-top: 25px; }
+
+.button-main {
+  padding: 10px 15px;
+  background-color: #3B5998;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 0px 10px 10px 0px;
+  box-shadow: 1px 2px 10px 0px gray;
+  transition: all 300ms ease;
+  font-size: 20px; }
+  .button-main:hover {
+    background-color: #3B5777;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1); }
+
+.button-grp .button-main {
+  transition: all 300ms ease; }
+  .button-grp .button-main:hover {
+    transform: scale(1.1); }
+
+.section {
+  height: 550px;
+  margin: 0px 0px 100px 0px;
+  background-image: url("https://www.brafton.com/wp-content/uploads/2013/09/Marketing-budget-increase.jpg");
+  background-size: cover;
+  background-position: 0% 20%;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 768px) {
+    .section {
+      background-position: 30% 20%; } }
+
+.section2 {
+  padding: 10px;
+  margin-bottom: 100px;
+  height: 550px; }
+  @media only screen and (max-width: 768px) {
+    .section2 {
+      height: inherit; } }
+
+@media only screen and (max-width: 768px) {
+  .section-fix-margin {
+    margin-top: 600px; } }
+
+.section2:nth-child(even) {
+  background-color: #f4f6f7;
+  box-shadow: 0 0 5px 10px #f4f6f7; }
+
+.section-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  box-shadow: 2px 4px 16px 0px gray;
+  background-image: url("images/canstockphoto1.jpg"); }
+
+.section-img2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  box-shadow: 2px 4px 16px 0px gray;
+  background-image: url("images/canstockphoto2.jpg"); }
+
+.section-img3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  box-shadow: 2px 4px 16px 0px gray;
+  background-image: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAA0zAAAAJGFjZjhkNGFlLWQxMTgtNDdhNC1hNzFiLTY5OGE1NWViYTA0Yg.jpg"); }
+
+.section-img4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  box-shadow: 2px 4px 16px 0px gray;
+  background-image: url("images/livechat.png"); }
+
+.img-contain {
+  padding: 0; }
+
+.txt-contain {
+  text-align: center; }
+
+.txt-contain h1 {
+  text-align: center;
+  margin: 10px 0px 0px 0px; }
+
+.txt-contain h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #3B5998; }
+
+.pp {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  font-family: 'Open Sans';
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 15px; }
+
+.header-text {
+  font-family: 'Raleway';
+  font-weight: 800; }
+
+.sub-header-text {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 22px;
+  color: #3B5998; }
+
+.heading-sub {
+  font-size: 26px;
+  color: #3B5998; }
+
+.subheader-text {
+  font-family: 'Raleway'; }
+
+.footer {
+  background-color: black; }
+
+.footer-titles {
+  padding-bottom: 15px; }
+
+.call-to-action {
+  margin-top: -45px;
+  padding: 20px 0px 60px 0px; }
+
+.cta-contain {
+  text-align: center; }
+
+.cta-header {
+  margin-bottom: 25px;
+  text-align: center; }
+
+.cta-button {
+  background-color: #3B5998;
+  padding: 20px;
+  font-size: 22px;
+  box-shadow: 1px 2px 10px 0px gray; }
+
+.drop {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  transition: all 400ms ease;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+  transition: all 300ms ease; }
+
+.height100 {
+  height: 100%; }
+
+.exit-btn {
+  color: #fff;
+  position: absolute;
+  padding: 25px;
+  font-size: 50px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: all 400ms ease; }
+
+.register-form-contain {
+  text-align: center;
+  width: 50%;
+  margin: 100px 0px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px 0px;
+  display: none;
+  opacity: 0;
+  transition: all 400ms ease; }
+  @media only screen and (max-width: 768px) {
+    .register-form-contain {
+      margin: 90px 0px 0px 0px;
+      padding: 5px;
+      height: 80%;
+      width: 90%; } }
+
+.display {
+  display: block; }
+
+.form {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .form-title {
+    margin-top: 25px; } }
+
+.form-fix {
+  margin-top: 25px; }
+
+.form-fix2 {
+  margin-top: 25px;
+  margin-left: 15px;
+  float: left; }
+
+.submit {
+  float: right;
+  background-color: #3B5998;
+  margin-top: 40px; }
+
+.term-conditions {
+  display: block;
+  float: left; }
+  @media only screen and (min-width: 1080px) {
+    .term-conditions {
+      margin-top: 25px; } }
+
+.footer {
+  padding: 25px 0px 0px 0px; }
+
+.ul-footer {
+  text-align: center;
+  color: white; }
+  .ul-footer li {
+    text-decoration: none;
+    list-style: none; }
+
+.copyright {
+  color: white;
+  font-size: 22px;
+  padding-top: 15px;
+  background-color: black; }
+
+/*# sourceMappingURL=main.css.map */

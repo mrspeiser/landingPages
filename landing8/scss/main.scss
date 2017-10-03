@@ -57,7 +57,7 @@ aside {
 header {
 	padding: 0px 20px;
 	@include headerdefault($default, $headerheight);
-
+	color: black;
 	.nav {
 		float: right;
 		padding-right: 80px;
@@ -288,6 +288,7 @@ footer {
 		cursor: pointer;
 		margin-left: 0;
 		opacity: 0.7;
+		color: white;
 		@include transition-all;
 		&:hover {
 		  opacity: 1;
