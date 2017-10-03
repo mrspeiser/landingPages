@@ -1,0 +1,70 @@
+@mixin tiny-screen() {
+	@media only screen and (max-width: 528px){
+	  @content;
+	}
+}
+
+@mixin small-screen() {
+	@media only screen and (max-width: 683px){
+	  @content;
+	}
+}
+
+@mixin medium-screen() {
+	@media only screen and (max-width: 780px){
+	  @content;
+	}
+}
+
+@mixin large-screen() {
+	@media only screen and (max-width: 960px){
+	  @content;
+	}
+}
+
+@mixin google-font($font){
+	$font: unquote($font);
+	@import url(https://fonts.googleapis.com/css?family=#{$font})
+}
+
+@mixin transition-all {
+	transition: all 500ms ease;
+}
+
+
+@mixin apply-to-ie-6 {
+	* html {
+		@content;
+	}
+}
+
+@mixin rounded($radius: 6px) {
+	border-radius: $radius;
+}
+
+@mixin init() {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin header($background-color: $color1, $height: 60px){
+	@include init();
+	background-color: black;
+    height: $height;
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+	overflow: hidden;
+	.ul-left {
+		float: left;
+		li {
+			float: left;
+			list-style: none;
+		}
+	}
+	.ul-right {
+		float: right;
+	}
+}
+
+

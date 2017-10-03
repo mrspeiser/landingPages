@@ -1,0 +1,48 @@
+
+
+$theme: bright;
+
+	$color1: rgba(2, 103, 193, 1);
+	$color2: rgba(0, 117, 196, 1);
+	$color3: rgba(239, 160, 11, 1);
+	$color4: rgba(214, 81, 8, 1);
+	$color5: rgba(89, 31, 10, 1);
+	$dark-blue: #1B334B;
+
+@if $theme == newTan {
+	// 1-3 Tan-ish 4 Blue 5 Dark Green;
+	$color1: rgba(227, 231, 175, 1);
+	$color2: rgba(162, 167, 127, 1);
+	$color3: rgba(239, 241, 197, 1);
+	$color4: rgba(3, 94, 123, 1);
+	$color5: rgba(0, 46, 44, 1);
+
+} @else if $theme == bright {
+	// 1-2 Bright blue, 3 yellow, 4 orange, 5 dark red;
+	$color1: rgba(2, 103, 193, 1);
+	$color2: rgba(0, 117, 196, 1);
+	$color3: rgba(239, 160, 11, 1);
+	$color4: rgba(214, 81, 8, 1);
+	$color5: rgba(89, 31, 10, 1);
+
+}
+// COLORS
+$black: #000000;
+$white: #fff;
+
+
+// FONTS
+$text-font: "Open Sans", Arial, sans-serif;
+$title-font: "Cabin";
+$li-font: "Roboto";
+$headline-font: 'Raleway:800', Georgia, serif;
+// @include google-font("Cabin");
+// @include google-font("Scope+One");
+// @include google-font("Anton");
+// @include google-font("Doppio+One");
+// @include google-font("Open+Sans");
+
+
+// SIZES
+$third: 33%;
+$col: col-width($columns: 8);
